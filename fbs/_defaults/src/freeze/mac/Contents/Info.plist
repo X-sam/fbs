@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleExecutable</key>
-    <string>${app_name}</string>
+    <string>${app_name}-mac</string>
     <key>CFBundleDisplayName</key>
     <string>${app_name}</string>
     <key>CFBundlePackageType</key>

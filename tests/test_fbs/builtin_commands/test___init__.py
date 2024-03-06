@@ -9,7 +9,7 @@ class BuiltInCommandsTest(FbsTest):
     def test_freeze_installer(self):
         freeze()
         if is_mac():
-            executable = path('${freeze_dir}/Contents/MacOS/${app_name}')
+            executable = path('${freeze_dir}/Contents/MacOS/${app_name}-mac')
         elif is_windows():
             executable = path('${freeze_dir}/${app_name}.exe')
         else:

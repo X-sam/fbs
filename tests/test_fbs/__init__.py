@@ -17,7 +17,7 @@ class FbsTest(TestCase):
         self._project_dir = join(self._tmp_dir.name, 'project')
         project_template = \
             join(dirname(fbs.builtin_commands.__file__), 'project_template')
-        replacements = { 'python_bindings': 'PyQt5' }
+        replacements = { 'python_bindings': 'PySide6' }
         filter_ = [join(project_template, 'src', 'main', 'python', 'main.py')]
         copy_with_filtering(
             project_template, self._project_dir, replacements, filter_

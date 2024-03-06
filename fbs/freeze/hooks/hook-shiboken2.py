@@ -1,12 +1,12 @@
 from glob import glob
 from os.path import dirname, relpath, join
 
-import PySide2
+import PySide6
 
 support = None
 
-if PySide2.__version__ == "5.12.2":
-    import PySide2.support as support
+if PySide6.__version__ == "6.6.2":
+    import PySide6.support as support
 else:
     try:
         # PySide2 < 5.12.2

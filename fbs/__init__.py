@@ -19,9 +19,9 @@ def init(project_dir):
     Call this if you are invoking neither `fbs` on the command line nor
     fbs.cmdline.main() from Python.
     """
-    if sys.version_info[0] != 3 or sys.version_info[1] != 8:
+    if sys.version_info[0] != 3 or sys.version_info[1] < 8:
         raise FbsError(
-            'This modification of the free version of fbs only supports Python 3.8.\n'
+            'This modification of the free version of fbs only supports Python > 3.8.\n'
         )
     SETTINGS.update(get_core_settings(abspath(project_dir)))
     for profile in get_default_profiles():
